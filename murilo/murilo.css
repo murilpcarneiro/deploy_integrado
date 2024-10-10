@@ -1,0 +1,262 @@
+:root {
+  --dark-mode-color: #010409;
+  --second-color: #c792ea;
+  --third-color: #011627;
+  --light-mode-color: #f0f0f0;
+  --dark-text-mode: #fff;
+  --light-text-mode: #000;
+  --second-color-light: #7518b3;
+
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.darkmode {
+  background-color: var(--dark-mode-color);
+  color: var(--dark-text-mode);
+}
+
+.lightmode {
+  background-color: var(--light-mode-color);
+  color: var(--light-text-mode);
+}
+
+#icone_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+  width: 207px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+p {
+  background-color: transparent;
+}
+
+#trabalho p.lightmode {
+  color: var(--dark-text-mode);
+  background-color: transparent;
+}
+
+#trabalho p.darkmode {
+  color: var(--dark-text-mode);
+  background-color: transparent;
+}
+
+#trabalho h3.lightmode {
+  color: var(--dark-text-mode);
+}
+
+#trabalho h3.darkmode {
+  color: var(--dark-text-mode);
+}
+
+h3.lightmode {
+  color: var(--second-color);
+  background-color: transparent;
+}
+
+h3.darkmode {
+  color: var(--second-color-light);
+  background-color: transparent;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+nav {
+  width: 77vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-text-mode);
+  background-color: transparent;
+}
+
+
+nav img {
+  height: 40px;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#icone_nav {
+  cursor: pointer;
+}
+
+#sobre_mim {
+  padding-top: 80px;
+}
+
+#sobre_mim img {
+  transition: ease-in-out 0.25s;
+}
+
+#sobre_mim,
+#repositorios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 80px;
+
+}
+
+#sobre_mim p,
+#repositorios p {
+  width: 80rem;
+}
+
+#trabalho:hover {
+  transform: translateY(-10px);
+}
+
+#img_navbar {
+  height: 80px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.link_navbar {
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 20px;
+  color: var(--dark-text-mode);
+}
+
+.link_navbar.lightmode {
+  color: var(--light-text-mode);
+}
+
+.link_navbar:hover {
+  color: var(--second-color);
+}
+
+#trabalho {
+  background-color: var(--third-color);
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px 10px 20px;
+  margin-bottom: 50px;
+  width: 80rem;
+  transition: ease-in-out 0.25s;
+}
+
+#preview_pagina_estatica {
+  padding: 20px;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  color: var(--dark-text-mode);
+  border: 1px solid white;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--dark-mode-color);
+  border-color: var(--dark-mode-color);
+}
+
+#btn {
+  min-width: 170px;
+  padding-left: 60px;
+}
+
+#btn img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 15px;
+}
+
+#btn:hover img {
+  visibility: hidden;
+}
+
+#btn:hover::before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-image: url("github-mark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 15px;
+}
+
+#trabalho p {
+  width: 60rem;
+}
+
+#trabalho #preview {
+  border-radius: 20px;
+  margin-bottom: 40px;
+}

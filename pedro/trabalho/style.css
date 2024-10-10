@@ -1,0 +1,67 @@
+body {
+  background-image: url("Wallpaper\ 4K\ Pc\ Universo\ Ideas.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.quadradoMaior {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 200px 100px 170px 100px;
+  padding-bottom: 30px;
+}
+
+div img {
+  height: 100px;
+  border-radius: 20px;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.contatoPessoa {
+  display: flex;
+  transition: 0.2s ease-in-out;
+}
+
+.nomeContato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nomeContato h2,
+.nomeContato p {
+  margin: 5px;
+}
+
+hr {
+  width: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#titulo {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.contatoPessoa:hover {
+  transform: scale(1.1);
+}
